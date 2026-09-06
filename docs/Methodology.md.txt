@@ -1,0 +1,138 @@
+# Methodology
+
+## 1. Project Purpose
+
+This project demonstrates a synthetic Continued Process Verification (CPV) analytics workflow for pharmaceutical manufacturing.
+
+The objective is to show how historical process behavior can be used to detect emerging statistical shifts during ongoing monitoring.
+
+## 2. Data Structure
+
+The synthetic dataset includes 24 batches:
+
+- 18 historical reference batches
+- 6 monitoring batches
+
+The monitored variables include:
+
+- API PSD D90
+- Compression force
+- Tablet hardness
+- Tablet thickness
+- Tablet weight
+- Disintegration time
+- Dissolution at 30 minutes
+
+## 3. Historical Reference Standardization
+
+The historical batches are used to establish the reference mean and standard deviation for each variable.
+
+Each batch is standardized using:
+
+Z = (Batch Result - Historical Mean) / Historical Standard Deviation
+
+Interpretation:
+
+- Z = 0: historical mean
+- Z = +1: one historical standard deviation above the mean
+- Z = -1: one historical standard deviation below the mean
+- Z = +3 or -3: three historical standard deviations from the mean
+
+Monitoring batches do not redefine the historical baseline.
+
+## 4. Nelson SPC Rules
+
+V2 applies eight Nelson rules to the monitoring period.
+
+### Rule 1
+One point beyond ±3 sigma.
+
+### Rule 2
+Nine consecutive points on the same side of the centerline.
+
+### Rule 3
+Six consecutive points continuously increasing or decreasing.
+
+### Rule 4
+Fourteen consecutive points alternating up and down.
+
+### Rule 5
+Two of three consecutive points beyond ±2 sigma on the same side.
+
+### Rule 6
+Four of five consecutive points beyond ±1 sigma on the same side.
+
+### Rule 7
+Fifteen consecutive points within ±1 sigma.
+
+### Rule 8
+Eight consecutive points outside ±1 sigma, with points on both sides of the centerline.
+
+## 5. SPC Signal Count
+
+For each monitoring batch, the dashboard counts the number of variable-rule combinations that are triggered.
+
+This count is used as a signal-density indicator.
+
+It is not a validated severity or risk score.
+
+## 6. Change-Point Detection
+
+A single major mean change point is estimated for each process variable.
+
+For each candidate split:
+
+1. The data are divided into a pre-change segment and a post-change segment.
+2. The sum of squared errors (SSE) is calculated within both segments.
+3. The split with the lowest combined SSE is selected as the candidate change point.
+
+The change-point model is then compared with a no-change model.
+
+## 7. SSE Reduction
+
+SSE reduction is calculated as:
+
+SSE Reduction (%) =  
+(No-Change SSE - Change-Point SSE) / No-Change SSE × 100
+
+A larger SSE reduction means the two-regime model explains the observed data substantially better than a single-mean model.
+
+SSE reduction is not a p-value and should not be interpreted as the probability that a change point is correct.
+
+## 8. Meaningful-Change Screening
+
+For this synthetic demonstration, a change is classified as meaningful when both conditions are met:
+
+- Absolute mean shift >= 1 historical standard deviation
+- SSE reduction >= 50%
+
+These are project-defined analytical screening thresholds.
+
+They are not universal FDA, ICH, PDA, USP, or industry acceptance criteria.
+
+## 9. Interpretation Approach
+
+The analysis distinguishes between:
+
+- statistical signals
+- potential process transitions
+- causal conclusions
+
+Statistical coincidence or temporal alignment does not prove causality.
+
+For example, the coordinated movement of API PSD, compression force, hardness, disintegration, and dissolution supports focused investigation but does not by itself establish that one variable caused another.
+
+## 10. Limitations
+
+This project uses synthetic data and is intended to demonstrate analytical methodology.
+
+A production CPV program should incorporate:
+
+- process knowledge
+- material attributes
+- CPP/CQA relationships
+- sampling strategy
+- measurement-system considerations
+- validated alert thresholds
+- investigation procedures
+- quality-system governance
