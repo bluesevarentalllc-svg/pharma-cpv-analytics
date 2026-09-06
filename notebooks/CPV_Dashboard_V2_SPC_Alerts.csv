@@ -1,0 +1,31 @@
+Batch_ID,Variable,Z_Score,Triggered_Rules,Rule_Count
+B019,API_PSD_D90_um,6.6,R1: Beyond ±3σ,1
+B019,Compression_Force_kN,4.9,R1: Beyond ±3σ,1
+B019,Tablet_Hardness_kp,3.93,R1: Beyond ±3σ,1
+B019,Disintegration_min,3.83,R1: Beyond ±3σ,1
+B019,Dissolution_30min_pct,-3.35,R1: Beyond ±3σ,1
+B020,API_PSD_D90_um,7.05,R1: Beyond ±3σ,1
+B020,Compression_Force_kN,5.48,R1: Beyond ±3σ,1
+B020,Tablet_Hardness_kp,5.29,R1: Beyond ±3σ,1
+B020,Disintegration_min,5.58,R1: Beyond ±3σ,1
+B020,Dissolution_30min_pct,-5.0,R1: Beyond ±3σ,1
+B021,API_PSD_D90_um,6.6,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ,2
+B021,Compression_Force_kN,6.07,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ,2
+B021,Tablet_Hardness_kp,6.19,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ,2
+B021,Disintegration_min,6.89,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ,2
+B021,Dissolution_30min_pct,-6.65,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ,2
+B022,API_PSD_D90_um,7.5,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ,2
+B022,Compression_Force_kN,6.36,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ,2
+B022,Tablet_Hardness_kp,7.09,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ,2
+B022,Disintegration_min,8.64,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ,2
+B022,Dissolution_30min_pct,-8.3,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ,2
+B023,API_PSD_D90_um,7.05,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ | R6: 4 of 5 beyond ±1σ,3
+B023,Compression_Force_kN,6.94,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ | R6: 4 of 5 beyond ±1σ,3
+B023,Tablet_Hardness_kp,8.44,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ | R6: 4 of 5 beyond ±1σ,3
+B023,Disintegration_min,10.39,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ | R6: 4 of 5 beyond ±1σ,3
+B023,Dissolution_30min_pct,-9.13,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ | R6: 4 of 5 beyond ±1σ,3
+B024,API_PSD_D90_um,7.5,R1: Beyond ±3σ | R5: 2 of 3 beyond ±2σ | R6: 4 of 5 beyond ±1σ,3
+B024,Compression_Force_kN,7.23,R1: Beyond ±3σ | R3: 6-point trend | R5: 2 of 3 beyond ±2σ | R6: 4 of 5 beyond ±1σ,4
+B024,Tablet_Hardness_kp,9.34,R1: Beyond ±3σ | R3: 6-point trend | R5: 2 of 3 beyond ±2σ | R6: 4 of 5 beyond ±1σ,4
+B024,Disintegration_min,11.7,R1: Beyond ±3σ | R3: 6-point trend | R5: 2 of 3 beyond ±2σ | R6: 4 of 5 beyond ±1σ,4
+B024,Dissolution_30min_pct,-9.95,R1: Beyond ±3σ | R3: 6-point trend | R5: 2 of 3 beyond ±2σ | R6: 4 of 5 beyond ±1σ,4

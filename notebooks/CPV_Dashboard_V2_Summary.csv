@@ -1,0 +1,8 @@
+Variable,First_SPC_Alert,Rules_Triggered,Change_Batch,Mean_Shift_Z,SSE_Reduction_pct,Meaningful_Change
+API_PSD_D90_um,B019,"R1, R5, R6",B019,7.05,92.6,True
+Compression_Force_kN,B019,"R1, R3, R5, R6",B019,6.16,89.1,True
+Tablet_Hardness_kp,B019,"R1, R3, R5, R6",B019,6.71,84.5,True
+Thickness_mm,,None,B010,0.53,7.3,False
+Tablet_Weight_mg,,None,B012,0.44,6.0,False
+Disintegration_min,B019,"R1, R3, R5, R6",B020,8.44,83.5,True
+Dissolution_30min_pct,B019,"R1, R3, R5, R6",B020,-7.63,84.1,True
