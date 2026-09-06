@@ -1,5 +1,9 @@
 # Pharmaceutical Continued Process Verification (CPV) Analytics Project
+## DOI
 
+Zenodo archival release:
+
+10.5281/zenodo.22552505
 ## Overview
 
 This project demonstrates a synthetic pharmaceutical Continued Process Verification (CPV) workflow using historical-reference standardization, SPC run-rule detection, and change-point analysis.
